@@ -26,7 +26,7 @@ export const metadata = {
       "An exclusive and prestigious club in Singapore. Sophisticated experiences await.",
     images: [
       {
-        url: "https://blackmirror.sg/og.png",
+        url: "https://blackmirror.sg/og_test.png",
         alt: "Black Mirror Club Singapore",
       },
     ],
