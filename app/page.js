@@ -97,7 +97,7 @@ export default function page() {
               Mirror
             </h1>
             <p className="font-sans text-base font-normal text-white text-opacity-70 font-canterbury">
-              Something's coming...
+              {`Something's coming...`}
             </p>
           </div>
         </div>
