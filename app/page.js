@@ -463,8 +463,8 @@ export default function page() {
                 {/* Note */}
                 <div className="text-center pt-4">
                   <p className="text-sm text-gray-400">
-                    * Required fields. We'll confirm your reservation within 24
-                    hours.
+                    {`* Required fields. We'll confirm your reservation within 24
+                    hours.`}
                   </p>
                 </div>
               </form>
