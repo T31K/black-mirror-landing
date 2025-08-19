@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/theo-van-doesburg');
 
 :root {
   --background: #ffffff;
@@ -34,17 +35,37 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Theo Van Doesburg';
+  src: url('/fonts/Theo.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --family-canterbury: 'Canterbury', serif;
+  --family-theo: 'Theo Van Doesburg', sans-serif;
 }
 
 .font-canterbury {
   font-family: var(--family-canterbury) !important;
 }
 
+.font-theo {
+  font-family: var(--family-theo) !important;
+}
+
+body {
+  font-family: var(--font-raleway);
+}
+
 main {
-  background-image: url('/images/bg.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('/images/velvet.webp');
+  background-size: contain;
+}
+
+
+h2 {
+  @apply font-theo !text-[#d984ec] tracking-[1.5px];
 }

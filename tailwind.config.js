@@ -11,6 +11,12 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        fontRaleway: ["var(--font-raleway)"],
+      },
+      perspective: {
+        1000: "1000px",
+      },
     },
   },
   plugins: [],
