@@ -252,7 +252,7 @@ export default function LuckyDrawPage() {
                   <ul className="text-gray-300 space-y-3 text-left">
                     <li className="flex items-start">
                       <span className="text-purple-400 mr-2">•</span>
-                      Click "SPIN THE WHEEL" to start
+                      {`Click "SPIN THE WHEEL" to start`}
                     </li>
                     <li className="flex items-start">
                       <span className="text-purple-400 mr-2">•</span>

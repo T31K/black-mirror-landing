@@ -98,9 +98,9 @@ export default function GalleryPage() {
                 Gallery
               </h1>
               <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
-                Step inside Singapore's most exclusive nightlife destination.
+                {`Step inside Singapore's most exclusive nightlife destination.
                 Experience the sophisticated atmosphere, immersive lighting, and
-                luxury that defines Black Mirror.
+                luxury that defines Black Mirror.`}
               </p>
             </div>
 
