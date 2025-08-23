@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { Raleway } from "next/font/google";
+import { Bodoni_Moda, Raleway } from "next/font/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,7 +17,10 @@ const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
 });
-
+const bodoniModa = Bodoni_Moda({
+  subsets: ["latin"],
+  variable: "--font-bodoni-moda",
+});
 export const metadata = {
   title: "Black Mirror Singapore",
   description:
@@ -49,7 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${bodoniModa.variable} antialiased`}
       >
         {children}
       </body>

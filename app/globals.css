@@ -57,14 +57,14 @@ body {
 }
 
 body {
-  font-family: var(--font-raleway);
+  font-family: var(--font-bodoni-moda);
 }
 
-main {
+div#main {
   background-image: url('/images/velvet.webp');
+  background-repeat: round;
   background-size: contain;
 }
-
 
 h2 {
   @apply font-theo !text-[#d984ec] tracking-[1.5px];

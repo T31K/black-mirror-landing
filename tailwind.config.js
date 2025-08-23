@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         fontRaleway: ["var(--font-raleway)"],
+        fontBodoniModa: ["var(--font-bodoni-moda)"],
       },
       perspective: {
         1000: "1000px",
