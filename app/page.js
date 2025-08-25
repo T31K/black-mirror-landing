@@ -34,7 +34,7 @@ export default function page() {
         <section id="gallery" className="relative py-16 sm:py-20 lg:py-24 z-10">
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl font-theo">
+              <h2 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl font-leckerli-one">
                 Gallery
               </h2>
               <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
@@ -173,7 +173,7 @@ export default function page() {
         <section id="events" className="relative py-16 sm:py-20 lg:py-24 z-10">
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl font-theo ">
+              <h2 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl font-leckerli-one ">
                 Events Calendar
               </h2>
               <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
@@ -205,7 +205,7 @@ export default function page() {
         >
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl font-theo">
+              <h2 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl font-leckerli-one">
                 Reservation
               </h2>
               <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">

@@ -160,7 +160,7 @@ const Calendar = () => {
                   {event.status === "closed" ? (
                     <>
                       <div className="text-6xl mb-4 opacity-50">🚫</div>
-                      <h3 className="text-3xl font-bold text-gray-400 mb-2 font-theo">
+                      <h3 className="text-3xl font-bold text-gray-400 mb-2 font-leckerli-one">
                         {event.date}
                       </h3>
                       <p className="text-xl text-gray-500 font-semibold">
@@ -170,7 +170,7 @@ const Calendar = () => {
                   ) : (
                     <>
                       <div className="text-5xl mb-4">🎧</div>
-                      <h3 className="text-2xl font-bold text-white mb-2 font-theo">
+                      <h3 className="text-2xl font-bold text-white mb-2 font-leckerli-one">
                         {event.date}
                       </h3>
                       <h4 className="text-xl font-semibold text-purple-300 mb-2">

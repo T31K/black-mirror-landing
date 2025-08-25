@@ -75,10 +75,10 @@ export default function EventCard() {
                 </span>
               </h3>
               <div className="flex flex-col justify-center py-1">
-                <p className="hidden md:block text-xs sm:text-sm uppercase tracking-widest text-gray-400 font-theo">
+                <p className="hidden md:block text-xs sm:text-sm uppercase tracking-widest text-gray-400 font-leckerli-one">
                   {`/ ${event.day} - ${event.date} /`}
                 </p>
-                <p className="block md:hidden text-[10px] sm:text-sm uppercase tracking-widest text-gray-400 font-theo whitespace-nowrap">
+                <p className="block md:hidden text-[10px] sm:text-sm uppercase tracking-widest text-gray-400 font-leckerli-one whitespace-nowrap">
                   {`/ ${event.date} /`}
                 </p>
 

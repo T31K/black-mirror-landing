@@ -99,7 +99,7 @@ export default function FAQPage() {
                   key={index}
                   className="backdrop-blur-sm border border-gray-200/30 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300 bg-black/50 backdrop-blur-lg"
                 >
-                  <h3 className="text-xl font-semibold text-white mb-3 font-theo tracking-widest">
+                  <h3 className="text-xl font-semibold text-white mb-3 font-leckerli-one tracking-widest">
                     {faq.question}
                   </h3>
                   <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
@@ -110,7 +110,7 @@ export default function FAQPage() {
             {/* Contact CTA */}
             <div className="text-center mt-16">
               <div className="backdrop-blur-sm border border-gray-200/30 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-white mb-4 font-theo">
+                <h3 className="text-2xl font-bold text-white mb-4 font-leckerli-one">
                   Still Have Questions?
                 </h3>
                 <p className="text-gray-300 mb-6 max-w-2xl mx-auto">

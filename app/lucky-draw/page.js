@@ -85,7 +85,7 @@ export default function LuckyDrawPage() {
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             {/* Header */}
             <div className="text-center mb-16">
-              <h1 className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl font-theo mb-6 tracking-wide ">
+              <h1 className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl font-leckerli-one mb-6 tracking-wide ">
                 Lucky Draw
               </h1>
               <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
@@ -230,7 +230,7 @@ export default function LuckyDrawPage() {
               {winner && (
                 <div className="mt-12 text-center">
                   <div className="bg-gradient-to-r from-purple-600 to-red-600 rounded-2xl p-8 shadow-2xl">
-                    <h2 className="text-3xl font-bold text-white mb-4 font-theo">
+                    <h2 className="text-3xl font-bold text-white mb-4 font-leckerli-one">
                       🎉 Congratulations! 🎉
                     </h2>
                     <p className="text-2xl text-white font-semibold">
@@ -245,7 +245,7 @@ export default function LuckyDrawPage() {
 
               {/* Rules */}
               <div className="mt-16 max-w-2xl text-center">
-                <h3 className="text-2xl font-bold text-white mb-6 font-theo">
+                <h3 className="text-2xl font-bold text-white mb-6 font-leckerli-one">
                   How to Play
                 </h3>
                 <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">

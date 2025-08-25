@@ -94,7 +94,7 @@ export default function GalleryPage() {
         <section className="relative py-16 sm:py-20 lg:py-24 z-10">
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div className="text-center mb-16">
-              <h1 className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl font-theo mb-6">
+              <h1 className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl font-leckerli-one mb-6">
                 Gallery
               </h1>
               <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
@@ -304,7 +304,7 @@ export default function GalleryPage() {
                   <p className="font-medium text-white">
                     {`9 Raffles Boulevard #02-08/09`}
                     <br />
-                    {`Millenia Walk, Singapore 088444`}
+                    {`Millenia Walk, Singapore 039596`}
                   </p>
                 </div>
               </div>
