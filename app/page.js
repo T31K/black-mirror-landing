@@ -8,7 +8,7 @@ export default function page() {
     <div id="main">
       <Navbar />
 
-      <main className="relative pt-24 pb-12 lg:pt-28 xl:pt-32 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
+      <main className="relative py-12 lg:pt-28 xl:pt-32 sm:p-16 lg:pb-32 xl:pb-48 2xl:pb-56">
         <div className="relative min-h-[70dvh] md:min-h-screen flex flex-col justify-start pt-24 items-center">
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div className="max-w-xl mx-auto text-center">
@@ -24,7 +24,7 @@ export default function page() {
                 Black <br />
                 Mirror
               </h1>
-              <p className=" text-base font-normal text-white text-opacity-70 ">
+              <p className="mt-8 px-3 text-justify text-base font-normal text-white text-opacity-70 ">
                 {`Black Mirror is Singapore’s latest nightlife destination where luxury and sensory distortion collide. Step into a world of sleek reflections, immersive lighting, and pulsating DJ sets, designed to blur the line between reality and fantasy. At Black Mirror, you don’t just party, you surrender to the night..`}
               </p>
             </div>

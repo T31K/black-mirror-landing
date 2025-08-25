@@ -61,26 +61,31 @@ export default function EventCard() {
           >
             {/* Text Section */}
             <div
-              className={`flex justify-start gap-x-4 py-0 md:py-2 w-2/3 z-[55] ${
+              className={`flex  items-center justify-start gap-x-4 py-0 md:py-2 w-2/3 z-[55] ${
                 isOdd
                   ? "border-[1.3px] border-gray-400/90 rounded-r-full pl-4 pl-10 border-l-0 bg-black/50 backdrop-blur-lg"
                   : "border-[1.3px] border-gray-400/90 rounded-l-full pl-6 pl-28 border-r-0 bg-black/50 backdrop-blur-lg"
               }`}
             >
               {/* <p className="text-md text-gray-400 mb-3">{event.date}</p> */}
-              <h3 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-white mb-0 md:mb-2 tracking-[0px]">
+              <h3 className="text-5xl sm:text-6xl lg:text-8xl font-bold text-white mb-0 md:mb-2 tracking-[0px]">
                 {event.id === 0 ? "*" : event.id}
-                <span className="text-md sm:text-[28px] tracking-tights text-white/80">
+                <span className="text-[12px] md:blocktext-[5px] sm:text-[24px] tracking-tights text-white/80">
                   {event.suffix}
                 </span>
               </h3>
               <div className="flex flex-col justify-center py-1">
-                <p className="text-xs sm:text-sm uppercase tracking-widest text-gray-400 font-theo">
+                <p className="hidden md:block text-xs sm:text-sm uppercase tracking-widest text-gray-400 font-theo">
                   {`/ ${event.day} - ${event.date} /`}
                 </p>
+                <p className="block md:hidden text-[10px] sm:text-sm uppercase tracking-widest text-gray-400 font-theo whitespace-nowrap">
+                  {`/ ${event.date} /`}
+                </p>
 
-                <h3 className="text-4xl font-semibold">{event.title}</h3>
-                <p className="text-purple-400 tracking-widest text-sm">
+                <h3 className="text-lg text-4xl font-semibold">
+                  {event.title}
+                </h3>
+                <p className="text-purple-400 tracking-widest text-xs whitespace-nowrap">
                   {event.subtitle}
                 </p>
               </div>
@@ -88,7 +93,7 @@ export default function EventCard() {
 
             {/* Image Section */}
             <div
-              className={`w-[calc(100%/3+7rem)] h-32 sm:h-48 lg:h-auto relative overflow-hidden ${
+              className={`w-[calc(100%/3+7rem)] h-24 sm:h-48 lg:h-auto relative overflow-hidden ${
                 isOdd ? "rounded-r-full -ml-20" : "rounded-l-full -mr-20"
               }`}
             >
