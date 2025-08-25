@@ -97,9 +97,9 @@ export default function FAQPage() {
                 Frequently Asked Questions
               </h1>
               <p className="mt-8 px-3 text-justify text-lg font-normal text-white text-opacity-70 max-w-3xl mx-auto">
-                Find answers to common questions about Black Mirror. Can't find
+                {`Find answers to common questions about Black Mirror. Can't find
                 what you're looking for? Contact us directly and we'll be happy
-                to help.
+                to help.`}
               </p>
             </div>
           </div>
