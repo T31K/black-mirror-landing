@@ -10,12 +10,12 @@ export default function FAQPage() {
     {
       question: "Where is Black Mirror located?",
       answer:
-        "We are located at 9 Raffles Boulevard #02-08/09, Millenia Walk, Singapore 088444. We're easily accessible via public transportation and located in the heart of Singapore's entertainment district.",
+        "We are located at 9 Raffles Boulevard #02-08/09, Millenia Walk, Singapore 039596. We're situated at Nihon Street.",
     },
     {
       question: "What are your operating hours?",
       answer:
-        "Monday to Friday: 12–2pm, 5:30pm–1am | Friday: 12–2pm, 5:30pm–2am | Saturday: 9:30pm–3am | Sunday: Closed",
+        "Monday to Friday: 12 – 2pm (Bento Lunch), 5:30pm – 1am | Friday: 12 – 2pm (Bento Lunch), 5:30pm – 2am | Saturday: 9:30pm – 3am | Sunday: Closed",
     },
     {
       question: "Do I need to make a reservation?",
@@ -30,7 +30,7 @@ export default function FAQPage() {
     {
       question: "Is there an age restriction?",
       answer:
-        "Yes, Black Mirror is strictly for guests aged 21 and above. Valid government-issued photo identification is required for entry. We do not make exceptions to this policy.",
+        "Yes, Black Mirror is strictly for guests aged 18 and above. Valid government-issued photo identification is required for entry.",
     },
     {
       question: "Do you serve food?",
@@ -48,11 +48,6 @@ export default function FAQPage() {
         "Absolutely! We offer private event spaces and can accommodate groups of various sizes. Whether it's a birthday celebration, corporate event, or special occasion, our team will work with you to create a memorable experience. Contact us for more details.",
     },
     {
-      question: "What payment methods do you accept?",
-      answer:
-        "We accept all major credit cards, debit cards, and cash payments. We also support digital payment methods including PayNow, GrabPay, and other popular Singapore payment platforms.",
-    },
-    {
       question: "Is there parking available?",
       answer:
         "Yes, Millenia Walk offers convenient parking facilities. Parking rates apply and vary by time. We recommend checking the mall's parking information for current rates and availability.",
@@ -63,16 +58,6 @@ export default function FAQPage() {
         "Yes, we have minimum spend requirements that vary by table size and location. These requirements help us maintain our premium experience and are communicated at the time of booking. Please contact us for specific details.",
     },
     {
-      question: "Can I bring my own cake or decorations?",
-      answer:
-        "We welcome celebration cakes and small decorations for special occasions. However, we do not allow external catering or large decorative items. Please contact us in advance to discuss your specific requirements.",
-    },
-    {
-      question: "What safety measures do you have in place?",
-      answer:
-        "Your safety is our priority. We maintain strict security protocols, regular cleaning schedules, and comply with all local health and safety regulations. Our staff is trained in safety procedures and emergency response.",
-    },
-    {
       question: "Do you offer bottle service?",
       answer:
         "Yes, we offer premium bottle service with a selection of fine spirits, champagne, and wine. Our bottle service includes dedicated staff attention and premium table positioning. Please inquire about our current bottle service offerings.",
@@ -80,7 +65,7 @@ export default function FAQPage() {
     {
       question: "How can I stay updated on events and promotions?",
       answer:
-        "Follow us on Instagram for the latest updates, event announcements, and exclusive promotions. You can also subscribe to our newsletter or contact us directly for personalized updates about upcoming events.",
+        "Follow us on Instagram for the latest updates, event announcements, and exclusive promotions.",
     },
   ];
 
@@ -206,7 +191,7 @@ export default function FAQPage() {
                   <p className="font-medium text-white">
                     9 Raffles Boulevard #02-08/09
                     <br />
-                    Millenia Walk, Singapore 088444
+                    Millenia Walk, Singapore 039596
                   </p>
                 </div>
               </div>

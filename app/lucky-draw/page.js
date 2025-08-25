@@ -251,24 +251,16 @@ export default function LuckyDrawPage() {
                 <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
                   <ul className="text-gray-300 space-y-3 text-left">
                     <li className="flex items-start">
-                      <span className="text-purple-400 mr-2">•</span>
-                      {`Click "SPIN THE WHEEL" to start`}
+                      <span className="text-purple-400 mr-2">1)</span>
+                      Click to start
                     </li>
                     <li className="flex items-start">
-                      <span className="text-purple-400 mr-2">•</span>
-                      Wait for the wheel to stop spinning
+                      <span className="text-purple-400 mr-2">2)</span>
+                      Wait for wheel
                     </li>
                     <li className="flex items-start">
-                      <span className="text-purple-400 mr-2">•</span>
-                      Show your winning screen to our staff
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-purple-400 mr-2">•</span>
-                      One spin per customer per night
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-purple-400 mr-2">•</span>
-                      Prizes must be claimed the same night
+                      <span className="text-purple-400 mr-2">3)</span>
+                      Enter your particulars to receive e-vouchers to redeem
                     </li>
                   </ul>
                 </div>

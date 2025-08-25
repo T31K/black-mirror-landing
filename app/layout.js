@@ -21,6 +21,11 @@ const bodoniModa = Bodoni_Moda({
   subsets: ["latin"],
   variable: "--font-bodoni-moda",
 });
+
+const Leckerli_One = Leckerli_One({
+  subsets: ["latin"],
+  variable: "--font-leckerli-one",
+});
 export const metadata = {
   title: "Black Mirror Singapore",
   description:

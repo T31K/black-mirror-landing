@@ -317,17 +317,21 @@ export default function GalleryPage() {
                 <div className="space-y-2 text-base">
                   <div className="flex justify-between items-center">
                     <span className="text-white font-medium">
-                      Monday to Friday
+                      Monday to Thursday
                     </span>
-                    <span className="text-gray-300">12–2pm, 5:30pm–1am</span>
+                    <span className="text-gray-300">
+                      12 – 2pm (Bento Lunch), 5:30pm – 1am
+                    </span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-white font-medium">Friday</span>
-                    <span className="text-gray-300">12–2pm, 5:30pm–2am</span>
+                    <span className="text-gray-300">
+                      12 – 2pm (Bento Lunch), 5:30pm – 2am
+                    </span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-white font-medium">Saturday</span>
-                    <span className="text-gray-300">9:30pm–3am</span>
+                    <span className="text-gray-300">9:30pm – 3am</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-white font-medium">Sunday</span>

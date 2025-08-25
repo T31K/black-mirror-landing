@@ -479,7 +479,7 @@ export default function page() {
                   <p className="font-medium text-white">
                     {`9 Raffles Boulevard #02-08/09`}
                     <br />
-                    {`Millenia Walk, Singapore 088444`}
+                    {`Millenia Walk, Singapore 039596`}
                   </p>
                 </div>
               </div>

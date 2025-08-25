@@ -56,6 +56,10 @@ body {
   font-family: var(--family-theo) !important;
 }
 
+.font-leckerli-one {
+  font-family: var(--font-leckerli-one) !important;
+}
+
 body {
   font-family: var(--font-bodoni-moda);
 }
@@ -67,5 +71,5 @@ div#main {
 }
 
 h2 {
-  @apply font-theo !text-[#d984ec] tracking-[1.5px];
+  @apply font-leckerli-one !text-[#d984ec] tracking-[1.5px];
 }
