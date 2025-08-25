@@ -76,12 +76,6 @@ const Navbar = () => {
               Book Now
             </Link>
             <Link
-              href="/contact"
-              className="text-sm xl:text-base font-medium text-white hover:text-purple-400 transition-colors duration-200 underline decoration-transparent hover:decoration-current underline-offset-4"
-            >
-              Contact
-            </Link>
-            <Link
               href="/faqs"
               className="text-sm xl:text-base font-medium text-white hover:text-purple-400 transition-colors duration-200 underline decoration-transparent hover:decoration-current underline-offset-4"
             >

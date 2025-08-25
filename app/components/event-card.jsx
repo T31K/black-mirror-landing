@@ -17,7 +17,7 @@ const events = [
     day: "Saturday",
     date: "30/08/2025",
     title: "Nuttrix",
-    subtitle: "Progressive House, House Music",
+    subtitle: "Progressive House",
     time: "10pm till late",
     link: "https://linktr.ee/nuttrix",
     image: "/images/dj/dj_nuttrix.webp",
@@ -63,12 +63,12 @@ export default function EventCard() {
             <div
               className={`flex  items-center justify-start gap-x-4 py-0 md:py-2 w-2/3 z-[55] ${
                 isOdd
-                  ? "border-[1.3px] border-gray-400/90 rounded-r-full pl-4 pl-10 border-l-0 bg-black/50 backdrop-blur-lg"
-                  : "border-[1.3px] border-gray-400/90 rounded-l-full pl-6 pl-28 border-r-0 bg-black/50 backdrop-blur-lg"
+                  ? "border-[1.3px] border-gray-400/90 rounded-r-full pl-0 md:pl-10 border-l-0 bg-black/50 backdrop-blur-lg"
+                  : "border-[1.3px] border-gray-400/90 rounded-l-full pl-4 md:pl-28 border-r-0 bg-black/50 backdrop-blur-lg"
               }`}
             >
               {/* <p className="text-md text-gray-400 mb-3">{event.date}</p> */}
-              <h3 className="text-5xl sm:text-6xl lg:text-8xl font-bold text-white mb-0 md:mb-2 tracking-[0px]">
+              <h3 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-white mb-0 md:mb-2 tracking-[0px]">
                 {event.id === 0 ? "*" : event.id}
                 <span className="text-[12px] md:blocktext-[5px] sm:text-[24px] tracking-tights text-white/80">
                   {event.suffix}
