@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import React, { useState, useEffect } from "react";
 
 export default function GalleryPage() {
@@ -278,84 +279,7 @@ export default function GalleryPage() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="relative bg-transparent">
-        {/* Curvy top border using SVG */}
-        <div className="relative">
-          <svg
-            className="w-full h-24 fill-gray-950"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path d="M0,0 C300,120 600,120 900,60 C1050,20 1150,0 1200,0 L1200,120 L0,120 Z" />
-          </svg>
-        </div>
-
-        {/* Footer content */}
-        <div className="bg-gray-950 text-red-900 px-8 py-12 -mt-1">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-              {/* Location Section */}
-              <div className="text-center md:text-left">
-                <h3 className="text-2xl font-serif mb-4 relative text-white inline-block font-canterbury">
-                  Location
-                </h3>
-                <div className="space-y-2 text-base">
-                  <p className="font-medium text-white">
-                    {`9 Raffles Boulevard #02-08/09`}
-                    <br />
-                    {`Millenia Walk, Singapore 039596`}
-                  </p>
-                </div>
-              </div>
-
-              {/* Hours Section */}
-              <div className="text-center">
-                <h3 className="text-2xl font-serif mb-4 relative inline-block text-white font-canterbury">
-                  Hours
-                </h3>
-                <div className="space-y-2 text-base">
-                  <div className="flex justify-between items-center">
-                    <span className="text-white font-medium">
-                      Monday to Thursday
-                    </span>
-                    <span className="text-gray-300">
-                      12 – 2pm (Bento Lunch), 5:30pm – 1am
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-white font-medium">Friday</span>
-                    <span className="text-gray-300">
-                      12 – 2pm (Bento Lunch), 5:30pm – 2am
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-white font-medium">Saturday</span>
-                    <span className="text-gray-300">9:30pm – 3am</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-white font-medium">Sunday</span>
-                    <span className="text-red-400">Closed</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Contact Section */}
-              <div className="text-center md:text-right">
-                <h3 className="text-2xl font-serif mb-4 relative inline-block text-white font-canterbury">
-                  Contact
-                </h3>
-                <div className="space-y-2 text-base">
-                  <p className="underline decoration-white text-white">
-                    events@blackmirror.sg
-                  </p>
-                  <p className="font-medium text-white">+65 9325 1818</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
