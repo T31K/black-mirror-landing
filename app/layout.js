@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { Bodoni_Moda, Raleway, Leckerli_One } from "next/font/google";
+import { Bodoni_Moda, Raleway, Montez } from "next/font/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,11 +22,12 @@ const bodoniModa = Bodoni_Moda({
   variable: "--font-bodoni-moda",
 });
 
-const leckerliOne = Leckerli_One({
+const tangerine = Montez({
   subsets: ["latin"],
   variable: "--font-leckerli-one",
   weight: ["400"],
 });
+
 export const metadata = {
   title: "Black Mirror Singapore",
   description:
@@ -58,7 +59,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${bodoniModa.variable} ${leckerliOne.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${bodoniModa.variable} ${tangerine.variable} antialiased`}
       >
         {children}
       </body>

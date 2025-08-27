@@ -48,11 +48,11 @@ export default function FAQPage() {
       answer:
         "Absolutely! We offer private event spaces and can accommodate groups of various sizes. Whether it's a birthday celebration, corporate event, or special occasion, our team will work with you to create a memorable experience. Contact us for more details.",
     },
-    {
-      question: "Is there parking available?",
-      answer:
-        "Yes, Millenia Walk offers convenient parking facilities. Parking rates apply and vary by time. We recommend checking the mall's parking information for current rates and availability.",
-    },
+    // {
+    //   question: "Is there parking available?",
+    //   answer:
+    //     "Yes, Millenia Walk offers convenient parking facilities. Parking rates apply and vary by time. We recommend checking the mall's parking information for current rates and availability.",
+    // },
     {
       question: "Do you have a minimum spend requirement?",
       answer:
@@ -100,16 +100,18 @@ export default function FAQPage() {
                   key={index}
                   className="backdrop-blur-sm border border-gray-200/30 rounded-2xl p-6 hover:border-purple-400/50 transition-all duration-300 bg-black/50 backdrop-blur-lg"
                 >
-                  <h3 className="text-xl font-semibold text-white mb-3 font-leckerli-one tracking-widest">
+                  <h3 className="text-lg md:text-2xl font-semibold text-white mb-3">
                     {faq.question}
                   </h3>
-                  <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                  <p className="text-sm md:text-lg text-gray-300 tracking-tight">
+                    {faq.answer}
+                  </p>
                 </div>
               ))}
             </div>
 
             {/* Contact CTA */}
-            <div className="text-center mt-16">
+            <div className="text-center mt-16 hidden">
               <div className="backdrop-blur-sm border border-gray-200/30 rounded-2xl p-8">
                 <h3 className="text-2xl font-bold text-white mb-4 font-leckerli-one">
                   Still Have Questions?

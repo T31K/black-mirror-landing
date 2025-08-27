@@ -22,7 +22,7 @@ const Footer = () => {
                 Location
               </h3>
               <div className="space-y-2 text-base">
-                <p className="font-medium text-white">
+                <p className="font-medium text-white tracking-wide">
                   9 Raffles Boulevard #02-08/09
                   <br />
                   Millenia Walk, Singapore 039596
@@ -40,15 +40,15 @@ const Footer = () => {
                   <span className="text-white font-medium">
                     Monday to Thursday
                   </span>
-                  <span className="text-gray-300">12–2pm, 5:30pm–1am</span>
+                  <span className="text-gray-300 tracking-wider">{`12-2pm, 5:30pm-1am`}</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-white font-medium">Friday</span>
-                  <span className="text-gray-300">12–2pm, 5:30pm–2am</span>
+                  <span className="text-gray-300 tracking-wider">{`12-2pm, 5:30pm-2am`}</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-white font-medium">Saturday</span>
-                  <span className="text-gray-300">9:30pm–3am</span>
+                  <span className="text-gray-300 tracking-wider">{`9:30pm-3am`}</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-white font-medium">Sunday</span>
@@ -66,7 +66,9 @@ const Footer = () => {
                 <p className="underline decoration-white text-white">
                   events@blackmirror.sg
                 </p>
-                <p className="font-medium text-white">+65 9325 1818</p>
+                <p className="font-medium text-white tracking-wider">
+                  +65 9325 1818
+                </p>
               </div>
             </div>
           </div>
