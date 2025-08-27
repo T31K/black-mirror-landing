@@ -131,6 +131,10 @@ export default function LuckyDrawPage() {
         email: formData.email,
         prize: prize,
         timestamp: new Date().toISOString(),
+        serial_number: Array.from(
+          { length: 8 },
+          () => Math.random().toString(36)[2]
+        ).join(""),
       };
 
       const response = await axios.post(

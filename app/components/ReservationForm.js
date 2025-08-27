@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import axios from "axios";
 
 export default function ReservationForm({
-  onSubmit,
   submitButtonText = "Submit Reservation Request",
 }) {
   const [formData, setFormData] = useState({
@@ -19,6 +19,10 @@ export default function ReservationForm({
     terms: false,
   });
 
+  // Add missing state variables
+  const [submitting, setSubmitting] = useState(false);
+  const [result, setResult] = useState(null);
+
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
@@ -27,10 +31,28 @@ export default function ReservationForm({
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (onSubmit) {
-      onSubmit(formData);
+  // Fix the form submission handler
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission
+    setSubmitting(true);
+    setResult(null);
+
+    try {
+      const res = await axios.post(
+        "http://localhost:3001/blackmirror/reservation",
+        { payload: formData }
+      );
+
+      if (res.status === 200) {
+        setResult({ ok: true });
+        // Don't reset form data here if you don't want it to reset
+      } else {
+        setResult({ error: res.data.error || "Submission failed" });
+      }
+    } catch (e) {
+      setResult({ error: e?.message || "Network error" });
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -40,6 +62,18 @@ export default function ReservationForm({
         onSubmit={handleSubmit}
         className="space-y-6 backdrop-blur-sm border border-gray-200/30 rounded-2xl p-8"
       >
+        {/* Show result messages */}
+        {result?.ok && (
+          <div className="p-4 bg-green-900/50 border border-green-500 rounded-lg text-green-300">
+            Reservation request submitted successfully!
+          </div>
+        )}
+        {result?.error && (
+          <div className="p-4 bg-red-900/50 border border-red-500 rounded-lg text-red-300">
+            Error: {result.error}
+          </div>
+        )}
+
         {/* Name Fields */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
@@ -280,9 +314,10 @@ export default function ReservationForm({
         <div className="pt-4">
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black"
+            disabled={submitting}
+            className="w-full bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 disabled:from-purple-800 disabled:to-purple-900 disabled:opacity-50 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black disabled:hover:scale-100"
           >
-            {submitButtonText}
+            {submitting ? "Submitting..." : submitButtonText}
           </button>
         </div>
 
