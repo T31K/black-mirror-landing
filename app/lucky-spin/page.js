@@ -138,7 +138,7 @@ export default function LuckyDrawPage() {
       };
 
       const response = await axios.post(
-        "http://localhost:3001/blackmirror/lucky-spin",
+        "https://api.t31k.cloud/blackmirror/lucky-spin",
         { payload: payload }
       );
       const data = await response.data;
