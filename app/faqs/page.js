@@ -11,7 +11,7 @@ export default function FAQPage() {
     {
       question: "Where is Black Mirror located?",
       answer:
-        "We are located at 9 Raffles Boulevard #02-08/09, Millenia Walk, Singapore 039596. We're situated at Nihon Street.",
+        "We are located at 9 Raffles Boulevard #02-08/09, Millenia Walk, Singapore 039596, situated at Nihon Street. We're situated at Nihon Street.",
     },
     {
       question: "What are your operating hours?",

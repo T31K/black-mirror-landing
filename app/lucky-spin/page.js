@@ -21,11 +21,10 @@ export default function LuckyDrawPage() {
 
   // Check localStorage on component mount
   useEffect(() => {
-    const today = new Date().toDateString();
     const lastPlayed = localStorage.getItem("luckySpinLastPlayed");
     const lastPlayedData = localStorage.getItem("luckySpinData");
 
-    if (lastPlayed === today && lastPlayedData) {
+    if (lastPlayed && lastPlayedData) {
       const data = JSON.parse(lastPlayedData);
       setHasPlayedToday(true);
       setWinner(data.winner);
@@ -80,14 +79,14 @@ export default function LuckyDrawPage() {
 
   // More varied color palette - purples, pinks, blue-purples
   const colorShades = [
-    { start: "#581c87", end: "#4c1d95" }, // Deep purple
-    { start: "#be185d", end: "#9f1239" }, // Deep pink
-    { start: "#7c3aed", end: "#6d28d9" }, // Purple
-    { start: "#3730a3", end: "#312e81" }, // Blue-purple
-    { start: "#c026d3", end: "#a21caf" }, // Magenta
-    { start: "#5b21b6", end: "#4c1d95" }, // Purple-indigo
-    { start: "#db2777", end: "#be185d" }, // Pink
-    { start: "#4338ca", end: "#3730a3" }, // Indigo-blue
+    { start: "#581c8770", end: "#4c1d9570" }, // Deep purple
+    { start: "#be185d70", end: "#9f123970" }, // Deep pink
+    { start: "#7c3aed70", end: "#6d28d970" }, // Purple
+    { start: "#3730a370", end: "#312e8170" }, // Blue-purple
+    { start: "#c026d370", end: "#a21caf70" }, // Magenta
+    { start: "#5b21b670", end: "#4c1d9570" }, // Purple-indigo
+    { start: "#db277770", end: "#be185d70" }, // Pink
+    { start: "#4338ca70", end: "#3730a370" }, // Indigo-blue
   ];
 
   const spinWheel = () => {
@@ -180,8 +179,7 @@ export default function LuckyDrawPage() {
 
       if (result.success) {
         // Store in localStorage to prevent duplicate submissions
-        const today = new Date().toDateString();
-        localStorage.setItem("luckySpinLastPlayed", today);
+        localStorage.setItem("luckySpinLastPlayed", true);
         localStorage.setItem(
           "luckySpinData",
           JSON.stringify({
@@ -291,11 +289,10 @@ export default function LuckyDrawPage() {
 
                   {/* Wheel SVG */}
                   <div
-                    className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden shadow-2xl transition-transform duration-[3000ms] ease-out"
+                    className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden shadow-2xl transition-transform duration-[3000ms] ease-out backdrop-blur-lg"
                     style={{ transform: `rotate(${rotation}deg)` }}
                   >
                     <svg
-                      className="w-full h-full"
                       viewBox="0 0 400 400"
                       xmlns="http://www.w3.org/2000/svg"
                     >

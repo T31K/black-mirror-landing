@@ -23,7 +23,9 @@ const Footer = () => {
               </h3>
               <div className="space-y-2 text-base">
                 <p className="font-medium text-white tracking-wide">
-                  9 Raffles Boulevard #02-08/09
+                  Black Mirror <br />
+                  (Situated at Nihon Street)
+                  <br /> 9 Raffles Boulevard #02-08/09
                   <br />
                   Millenia Walk, Singapore 039596
                 </p>
