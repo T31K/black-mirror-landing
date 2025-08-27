@@ -76,12 +76,12 @@ const Navbar = () => {
               >
                 Menu
               </Link>
-              <Link
+              {/* <Link
                 href="/events"
                 className=" text-sm xl:text-base font-medium text-white hover:text-purple-400 transition-colors duration-200 underline decoration-transparent hover:decoration-current underline-offset-4"
               >
                 Events
-              </Link>
+              </Link> */}
               <Link
                 href="/gallery"
                 className="text-sm xl:text-base font-medium text-white hover:text-purple-400 transition-colors duration-200 underline decoration-transparent hover:decoration-current underline-offset-4"
@@ -184,13 +184,13 @@ const Navbar = () => {
               >
                 Menu
               </Link>
-              <Link
+              {/* <Link
                 href="/events"
                 onClick={closeMenu}
                 className="text-lg font-medium text-white hover:text-purple-400 transition-colors duration-200 border-b border-gray-700/50 pb-4"
               >
                 Events
-              </Link>
+              </Link> */}
               <Link
                 href="/gallery"
                 onClick={closeMenu}
