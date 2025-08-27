@@ -70,6 +70,37 @@ div#main {
   background-size: contain;
 }
 
+
+
+.neon-text {
+  letter-spacing: 0.1em;
+  color: #d984ec;
+  text-shadow:
+    0 0 3px #d984ec,
+    0 0 6px #d984ec,
+    0 0 10px #d984ec,
+    0 0 15px #d984ec;
+}
+
+.neon-container {
+  position: relative;
+}
+
+.neon-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: radial-gradient(circle, #d984ec 0%, transparent 70%);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+
+
+
 h2 {
-  @apply font-leckerli-one !text-[#d984ec] tracking-[1.5px];
+  @apply neon-text font-leckerli-one text-[#d984ec] tracking-[1.5px];
 }
