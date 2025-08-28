@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
-import ReservationForm from "../components/ReservationForm";
 import Link from "next/link";
 import axios from "axios";
 
@@ -533,8 +532,8 @@ export default function LuckyDrawPage() {
                         2 House Pour
                       </h4>
                       <ul className="text-gray-300 space-y-2">
-                        <li>{`Hendrick's Gin`}</li>
-                        <li>{`Singleton 12 Years Whiskey`}</li>
+                        <li>{`Gin House Pour`}</li>
+                        <li>{`Whiskey House Pour`}</li>
                       </ul>
                     </div>
                     <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700">
