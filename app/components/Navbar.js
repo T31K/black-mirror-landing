@@ -35,9 +35,12 @@ const Navbar = () => {
                 title="Black Mirror"
                 className="inline-flex items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-offset-red-900"
               >
-                <span className="font-canterbury text-2xl lg:text-3xl text-white font-bold tracking-tight">
-                  BM
-                </span>
+                <img
+                  src="/images/bm_logo_alt.webp"
+                  alt="Black Mirror Logo"
+                  width={45}
+                  height={45}
+                />
               </Link>
             </div>
 

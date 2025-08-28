@@ -126,13 +126,6 @@ export default function GalleryPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                    {/* Image Title Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                      <h3 className="text-white font-semibold text-lg">
-                        {image.title}
-                      </h3>
-                    </div>
-
                     {/* Click to view indicator */}
                     <div className="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       Click to view
@@ -234,18 +227,10 @@ export default function GalleryPage() {
                     />
 
                     {/* Image info */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
-                      <h3 className="text-white font-semibold text-xl mb-2">
-                        {selectedImage.title}
-                      </h3>
-                      <p className="text-gray-300 text-sm">
-                        {selectedImage.alt}
-                      </p>
-                    </div>
                   </div>
 
                   {/* Image counter */}
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-sm">
+                  <div className="absolute backdrop-blur-sm bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-sm">
                     {galleryImages.findIndex(
                       (img) => img.src === selectedImage.src
                     ) + 1}{" "}
