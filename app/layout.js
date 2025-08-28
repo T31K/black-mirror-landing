@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { Bodoni_Moda, Raleway, Montez } from "next/font/google";
+import { Bodoni_Moda, Raleway, MonteCarlo } from "next/font/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,7 +22,7 @@ const bodoniModa = Bodoni_Moda({
   variable: "--font-bodoni-moda",
 });
 
-const tangerine = Montez({
+const tangerine = MonteCarlo({
   subsets: ["latin"],
   variable: "--font-leckerli-one",
   weight: ["400"],

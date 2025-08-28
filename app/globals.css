@@ -104,3 +104,7 @@ div#main {
 h2 {
   @apply neon-text font-leckerli-one text-[#d984ec] tracking-[1.5px];
 }
+
+.neon-glow {
+  @apply neon-text text-[#d984ec];
+}

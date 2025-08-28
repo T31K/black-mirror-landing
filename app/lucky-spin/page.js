@@ -224,9 +224,9 @@ export default function LuckyDrawPage() {
           <section className="relative py-16 sm:py-20 lg:py-24 z-10">
             <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
               <div className="text-center">
-                <h1 className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl font-leckerli-one mb-6 tracking-wide">
-                  Lucky Spin Online
-                </h1>
+                <h2 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl font-leckerli-one">
+                  Reservation
+                </h2>
                 <div className="bg-red-600/10 backdrop-blur-sm border border-gray-200/30 rounded-2xl p-8 shadow-2xl max-w-md mx-auto">
                   <h2 className="text-2xl font-bold text-white mb-4">
                     🎯 Already Played Today!
@@ -269,9 +269,9 @@ export default function LuckyDrawPage() {
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             {/* Header */}
             <div className="text-center mb-4">
-              <h1 className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl font-leckerli-one mb-6 tracking-wide">
+              <h2 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl font-leckerli-one">
                 Lucky Spin Online
-              </h1>
+              </h2>
               <p className="mt-4 text-md md:text-xl text-gray-300 max-w-3xl mx-auto">
                 Spin the wheel and win exclusive drink prizes!
               </p>

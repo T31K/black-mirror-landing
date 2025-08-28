@@ -38,8 +38,8 @@ const Navbar = () => {
                 <img
                   src="/images/bm_logo_alt.webp"
                   alt="Black Mirror Logo"
-                  width={45}
-                  height={45}
+                  width={32}
+                  height={32}
                 />
               </Link>
             </div>

@@ -22,7 +22,7 @@ export default function page() {
               width={1500}
               height={1500}
             /> */}
-              <h1 className="tracking-tighter text-white font-canterbury text-9xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[120px] 2xl:text-[180px] leading-[7rem] sm:leading-tight md:leading-tight lg:leading-tight xl:leading-[130px] 2xl:leading-[200px]">
+              <h1 className="title tracking-tighter text-white font-canterbury text-9xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[120px] 2xl:text-[180px] leading-[7rem] sm:leading-tight md:leading-tight lg:leading-tight xl:leading-[130px] 2xl:leading-[200px]">
                 Black <br />
                 Mirror
               </h1>
