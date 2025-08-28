@@ -229,11 +229,10 @@ export default function LuckyDrawPage() {
                 </h2>
                 <div className="bg-red-600/10 backdrop-blur-sm border border-gray-200/30 rounded-2xl p-8 shadow-2xl max-w-md mx-auto">
                   <h2 className="text-2xl font-bold text-white mb-4">
-                    🎯 Already Played Today!
+                    {`🎯 Already Played!`}
                   </h2>
                   <p className="text-white mb-6">
-                    You can only play once per day. Come back tomorrow for
-                    another chance to win!
+                    {`You can only play once!`}`
                   </p>
                   <p className="text-sm text-white/80 mb-4">
                     Your last prize:{" "}
