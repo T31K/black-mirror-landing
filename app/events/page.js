@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar";
-import Calendar from "../components/Calendar";
+import EventCard from "../components/event-card";
 import Footer from "../components/Footer";
 
-export default function ReservationPage() {
+export default function EventsPage() {
   return (
     <div id="main">
       <Navbar />
@@ -22,8 +22,8 @@ export default function ReservationPage() {
               </p>
             </div>
 
-            {/* Reservation Form */}
-            <Calendar />
+            {/* Event Cards */}
+            <EventCard />
           </div>
         </section>
       </main>
