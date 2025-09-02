@@ -3,46 +3,44 @@ import Image from "next/image";
 
 const events = [
   {
-    id: 23,
+    id: 6,
     day: "Saturday",
-    date: "23/08/2025",
-    title: "Shaun Low",
-    subtitle: "Melodic Techno",
+    date: "06/09/2025",
+    title: "DJ Xillix",
+    subtitle: "Electronic",
     time: "10pm till late",
-    image: "/images/dj/dj_shaun.webp",
-    suffix: "rd",
-  },
-  {
-    id: 30,
-    day: "Saturday",
-    date: "30/08/2025",
-    title: "Nuttrix",
-    subtitle: "Progressive House",
-    time: "10pm till late",
-    link: "https://linktr.ee/nuttrix",
-    image: "/images/dj/dj_nuttrix.webp",
+    image: "/images/dj/dj_xillix.webp", // Using placeholder until DJ Xillix image is available
     suffix: "th",
   },
   {
-    id: 0,
-    day: "Weekdays",
-    date: "Ongoing",
-    title: "Kate",
-    subtitle: "Resident DJ",
-    time: "8pm - closing (to be reconfirmed)",
-    image: "/images/dj/dj_kate.webp",
-    suffix: "",
+    id: 13,
+    day: "Saturday",
+    date: "13/09/2025",
+    title: "DJ Joeru",
+    subtitle: "Electronic",
+    time: "10pm till late",
+    image: "/images/dj/dj_joeru.webp",
+    suffix: "th",
   },
   {
-    id: 0,
-    day: "Weekdays",
-    date: "Ongoing",
-    title: "Casey",
-    subtitle: "Guest DJ",
-    time: "8pm - closing",
-    link: "https://drive.google.com/drive/folders/1h0x3Yt8WQw-rMQT6y_O4-totkG75Urfr",
-    image: "/images/dj/dj_casey.webp",
-    suffix: "",
+    id: 20,
+    day: "Saturday",
+    date: "20/09/2025",
+    title: "DJ Tyler Ross",
+    subtitle: "Electronic",
+    time: "10pm till late",
+    image: "/images/dj/dj_tyler_ross.webp", // Using placeholder until DJ Tyler Ross image is available
+    suffix: "th",
+  },
+  {
+    id: 27,
+    day: "Saturday",
+    date: "27/09/2025",
+    title: "DJ Joeru",
+    subtitle: "Electronic",
+    time: "10pm till late",
+    image: "/images/dj/dj_joeru.webp",
+    suffix: "th",
   },
 ];
 
@@ -75,14 +73,14 @@ export default function EventCard() {
                 </span>
               </h3>
               <div className="flex flex-col justify-center py-1">
-                <p className="hidden md:block text-xs sm:text-sm uppercase tracking-widest text-gray-400 font-leckerli-one">
+                <p className="hidden md:block text-xs sm:text-md uppercase tracking-widest text-gray-300 font-bold">
                   {`/ ${event.day} - ${event.date} /`}
                 </p>
-                <p className="block md:hidden text-[10px] sm:text-sm uppercase tracking-widest text-gray-400 font-leckerli-one whitespace-nowrap">
+                <p className="block md:hidden text-[10px] sm:text-lg uppercase tracking-widest text-gray-400 font-leckerli-one whitespace-nowrap">
                   {`/ ${event.date} /`}
                 </p>
 
-                <h3 className="text-lg text-4xl font-semibold">
+                <h3 className="text-lg text-[20px] sm:text-3xl font-semibold">
                   {event.title}
                 </h3>
                 <p className="text-purple-400 tracking-widest text-xs whitespace-nowrap">
