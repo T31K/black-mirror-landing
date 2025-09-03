@@ -192,7 +192,7 @@ export default function page() {
                 Book your table for an unforgettable night.
               </p>
               <a
-                href="#book-now"
+                href="https://www.opentable.sg/r/black-mirror-reservations-singapore?restref=301505&lang=en-US&ot_source=Restaurant%20website"
                 className="inline-flex items-center px-8 py-3 text-base font-medium text-white bg-neutral-800/80 border border-white/30 backdrop-blur-lg hover:bg-purple-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all duration-200"
               >
                 Make Reservation
