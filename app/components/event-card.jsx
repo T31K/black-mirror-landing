@@ -6,10 +6,10 @@ const events = [
     id: 6,
     day: "Saturday",
     date: "06/09/2025",
-    title: "DJ Xillix",
+    title: "DJ Fish Winters",
     subtitle: "Electronic",
     time: "10pm till late",
-    image: "/images/dj/dj_xillix.webp", // Using placeholder until DJ Xillix image is available
+    image: "/images/dj/dj_fish.webp", // Using placeholder until DJ Xillix image is available
     suffix: "th",
   },
   {
@@ -41,6 +41,16 @@ const events = [
     time: "10pm till late",
     image: "/images/dj/dj_joeru.webp",
     suffix: "th",
+  },
+  {
+    id: 0,
+    day: "Weekdays",
+    date: "Ongoing",
+    title: "Kate",
+    subtitle: "Resident DJ",
+    time: "8pm - closing",
+    image: "/images/dj/dj_kate.webp",
+    suffix: "",
   },
 ];
 
