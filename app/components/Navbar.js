@@ -101,7 +101,7 @@ const Navbar = () => {
                 Gallery
               </Link>
               <Link
-                href="/reservation"
+                href="https://www.opentable.sg/r/black-mirror-reservations-singapore?restref=301505&lang=en-US&ot_source=Restaurant%20website"
                 className="text-sm xl:text-base font-medium text-white hover:text-purple-400 transition-colors duration-200 underline decoration-transparent hover:decoration-current underline-offset-4"
               >
                 Book Now
@@ -215,7 +215,7 @@ const Navbar = () => {
                 <span>Gallery</span>
               </Link>
               <Link
-                href="/reservation"
+                href="https://www.opentable.sg/r/black-mirror-reservations-singapore?restref=301505&lang=en-US&ot_source=Restaurant%20website"
                 onClick={closeMenu}
                 className="flex items-center space-x-3 text-lg font-medium text-white hover:text-purple-400 transition-colors duration-200 border-b border-gray-700/50 pb-4"
               >

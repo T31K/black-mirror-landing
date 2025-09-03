@@ -215,7 +215,7 @@ export default function page() {
               </p>
             </div>
             {/* Reservation Form */}
-            <ReservationForm />
+            {/* <ReservationForm /> */}
           </div>
         </section>
       </main>
