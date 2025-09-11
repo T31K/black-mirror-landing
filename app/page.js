@@ -187,17 +187,6 @@ export default function page() {
             <EventCard />
 
             {/* Call to Action */}
-            <div className="text-center mt-16">
-              <p className="text-lg text-gray-300 mb-6">
-                Book your table for an unforgettable night.
-              </p>
-              <a
-                href="https://www.opentable.sg/r/black-mirror-reservations-singapore?restref=301505&lang=en-US&ot_source=Restaurant%20website"
-                className="inline-flex items-center px-8 py-3 text-base font-medium text-white bg-neutral-800/80 border border-white/30 backdrop-blur-lg hover:bg-purple-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all duration-200"
-              >
-                Make Reservation
-              </a>
-            </div>
           </div>
         </section>
         {/* Book Now Section */}
@@ -213,6 +202,12 @@ export default function page() {
               <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
                 Reserve your table for an exclusive night at Black Mirror
               </p>
+              <a
+                href="https://www.opentable.sg/r/black-mirror-reservations-singapore?restref=301505&lang=en-US&ot_source=Restaurant%20website"
+                className="inline-flex items-center px-8 py-3 !mt-4 text-base font-medium text-white bg-neutral-800/80 border border-white/30 backdrop-blur-lg hover:bg-purple-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all duration-200"
+              >
+                Make Reservation
+              </a>
             </div>
             {/* Reservation Form */}
             {/* <ReservationForm /> */}

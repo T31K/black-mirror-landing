@@ -23,7 +23,7 @@ export default function EventsPage() {
             </div>
 
             {/* Event Cards */}
-            <EventCard />
+            <EventCard isShowPage={true} />
           </div>
         </section>
       </main>
