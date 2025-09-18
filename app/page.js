@@ -7,10 +7,22 @@ import Link from "next/link";
 
 export default function page() {
   return (
-    <div id="main">
+    <div id="main" className="relative">
       <Navbar />
 
-      <main className="relative py-12 lg:pt-28 xl:pt-32 sm:p-16 lg:pb-32 xl:pb-48 2xl:pb-56">
+      <div className="absolute inset-0 h-screen w-screen pointer-events-none z-0 rounded-b-[100px] opacity-[90%]">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover rounded-b-[30px] md:rounded-b-[100px] opacity-[90%]"
+        >
+          <source src="/test.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <main className="relative py-12 lg:pt-28 xl:pt-32 sm:p-16 lg:pb-32 xl:pb-48 2xl:pb-56 relative">
         <div className="relative min-h-[70dvh] md:min-h-screen flex flex-col justify-start pt-24 items-center">
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div className="max-w-xl mx-auto text-center">

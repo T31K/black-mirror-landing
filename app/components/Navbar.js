@@ -27,7 +27,7 @@ const Navbar = () => {
     <>
       <header className="fixed inset-x-0 top-0 z-50 max-w-sm md:max-w-6xl bg-black/20 mx-auto mt-4 backdrop-blur-sm border border-gray-200/30 rounded-full ">
         <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
-          <div className="flex items-center justify-between h-12 lg:h-20">
+          <div className="flex items-center justify-between h-12 lg:h-16">
             {/* Logo */}
             <div className="flex flex-shrink-0">
               <Link
