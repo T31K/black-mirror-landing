@@ -4,24 +4,13 @@ import EventCard from "./components/event-card";
 import ReservationForm from "./components/ReservationForm";
 import Image from "next/image";
 import Link from "next/link";
-
+import HeroVideo from "./components/hero-video";
 export default function page() {
   return (
     <div id="main" className="relative">
       <Navbar />
+      <HeroVideo />
 
-      <div className="absolute inset-0 h-screen w-screen pointer-events-none z-0 rounded-b-[100px] opacity-[90%]">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover rounded-b-[30px] md:rounded-b-[100px] opacity-[90%]"
-        >
-          <source src="/test.webm" type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       <main className="relative py-12 lg:pt-28 xl:pt-32 sm:p-16 lg:pb-32 xl:pb-48 2xl:pb-56 relative">
         <div className="relative min-h-[70dvh] md:min-h-screen flex flex-col justify-start pt-24 items-center">
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
@@ -34,11 +23,11 @@ export default function page() {
               width={1500}
               height={1500}
             /> */}
-              <h1 className="title tracking-tighter text-white font-canterbury text-9xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[120px] 2xl:text-[180px] leading-[7rem] sm:leading-tight md:leading-tight lg:leading-tight xl:leading-[130px] 2xl:leading-[200px]">
+              <h1 className="title tracking-tighter text-white font-canterbury text-9xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[120px] 2xl:text-[180px] leading-[7rem] sm:leading-tight md:leading-tight lg:leading-tightest xl:leading-[130px] 2xl:leading-[200px]">
                 Black <br />
                 Mirror
               </h1>
-              <p className="mt-8 px-3 text-justify text-base font-normal text-white text-opacity-70 ">
+              <p className="hidden mt-8 px-3 text-justify text-base font-normal text-white text-opacity-70 ">
                 {`Black Mirror is Singapore’s latest nightlife destination where luxury and sensory distortion collide. Step into a world of sleek reflections, immersive lighting, and pulsating DJ sets, designed to blur the line between reality and fantasy. At Black Mirror, you don’t just party, you surrender to the night..`}
               </p>
             </div>

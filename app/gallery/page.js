@@ -59,10 +59,16 @@ export default function GalleryPage() {
       alt: "Black Mirror VIP Area - Exclusive seating",
       title: "VIP Lounge",
     },
+
     {
       src: "/images/gallery/black_mirror_5.webp",
       alt: "Black Mirror Dance Floor - Immersive lighting",
       title: "Dance Floor",
+    },
+    {
+      src: "/images/gallery/black_mirror_8.webp",
+      alt: "Black Mirror Night View - Singapore nightlife destination",
+      title: "Night View",
     },
     {
       src: "/images/gallery/black_mirror_6.webp",
@@ -74,13 +80,43 @@ export default function GalleryPage() {
       alt: "Black Mirror Entrance - Sleek modern design",
       title: "Entrance",
     },
-    {
-      src: "/images/gallery/black_mirror_8.webp",
-      alt: "Black Mirror Night View - Singapore nightlife destination",
-      title: "Night View",
-    },
+
     {
       src: "/images/gallery/black_mirror_9.webp",
+      alt: "Black Mirror Additional View - Exclusive atmosphere",
+      title: "Exclusive Space",
+    },
+    {
+      src: "/images/gallery/black_mirror_10.webp",
+      alt: "Black Mirror Additional View - Exclusive atmosphere",
+      title: "Exclusive Space",
+    },
+    {
+      src: "/images/gallery/black_mirror_11.webp",
+      alt: "Black Mirror Additional View - Exclusive atmosphere",
+      title: "Exclusive Space",
+    },
+
+    {
+      src: "/images/gallery/black_mirror_12.webp",
+      alt: "Black Mirror Additional View - Exclusive atmosphere",
+      title: "Exclusive Space",
+    },
+
+    {
+      src: "/images/gallery/black_mirror_13.webp",
+      alt: "Black Mirror Additional View - Exclusive atmosphere",
+      title: "Exclusive Space",
+    },
+
+    {
+      src: "/images/gallery/black_mirror_14.webp",
+      alt: "Black Mirror Additional View - Exclusive atmosphere",
+      title: "Exclusive Space",
+    },
+
+    {
+      src: "/images/gallery/black_mirror_15.webp",
       alt: "Black Mirror Additional View - Exclusive atmosphere",
       title: "Exclusive Space",
     },
@@ -98,31 +134,33 @@ export default function GalleryPage() {
               <h1 className="text-5xl font-bold text-white sm:text-6xl lg:text-7xl font-leckerli-one mb-6">
                 Gallery
               </h1>
-              <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="mt-4 text-sm text-gray-300 max-w-3xl mx-auto">
                 {`Step inside Singapore's most exclusive nightlife destination.
                 Experience the sophisticated atmosphere, immersive lighting, and
                 luxury that defines Black Mirror.`}
               </p>
             </div>
 
-            {/* Full Gallery Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Masonry Gallery */}
+            <div className="columns-2 lg:columns-3 gap-8 space-y-8">
               {galleryImages.map((image, index) => (
                 <div
                   key={index}
-                  className="group relative overflow-hidden rounded-2xl bg-gray-900 hover:shadow-2xl transition-all duration-500 cursor-pointer"
+                  className="group relative overflow-hidden rounded-2xl bg-gray-900 hover:shadow-2xl transition-all duration-500 cursor-pointer break-inside-avoid mb-8"
                   onClick={() => {
                     setSelectedImage(image);
                     setIsLightboxOpen(true);
                   }}
                 >
-                  <div className="aspect-[4/3] relative">
+                  <div className="relative">
                     <Image
                       src={image.src}
                       alt={image.alt}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      width={400}
+                      height={0}
+                      className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700"
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
+                      style={{ height: "auto" }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 

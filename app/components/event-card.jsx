@@ -94,6 +94,16 @@ const octEvents = [
     image: "/images/dj/dj_oing.webp",
     suffix: "th",
   },
+  {
+    id: 0,
+    day: "Weekdays",
+    date: "Ongoing",
+    title: "Kate",
+    subtitle: "Resident DJ",
+    time: "8pm - closing",
+    image: "/images/dj/dj_kate.webp",
+    suffix: "",
+  },
 ];
 
 export default function EventCard({ isShowPage = false }) {
