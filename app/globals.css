@@ -108,26 +108,3 @@ h2 {
 .neon-glow {
   @apply neon-text text-[#d984ec];
 }
-
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video-wrapper::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-
-  /* fade edges inward */
-  background: radial-gradient(circle, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);
-}
