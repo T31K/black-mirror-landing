@@ -23,9 +23,9 @@ export default function page() {
               width={1500}
               height={1500}
             /> */}
-              <h1 className="title tracking-tighter text-white font-canterbury text-9xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[120px] 2xl:text-[180px] leading-[7rem] sm:leading-tight md:leading-tight lg:leading-tightest xl:leading-[130px] 2xl:leading-[200px]">
+              <h1 className=" title tracking-tighter text-white font-canterbury text-9xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[120px] 2xl:text-[180px] leading-[7rem] sm:leading-tight md:leading-tight lg:leading-tightest xl:leading-[130px] 2xl:leading-[200px]">
                 Black <br />
-                Mirror
+                <span className="nickel">Mirror</span>
               </h1>
               <p className="hidden mt-8 px-3 text-justify text-base font-normal text-white text-opacity-70 ">
                 {`Black Mirror is Singapore’s latest nightlife destination where luxury and sensory distortion collide. Step into a world of sleek reflections, immersive lighting, and pulsating DJ sets, designed to blur the line between reality and fantasy. At Black Mirror, you don’t just party, you surrender to the night..`}

@@ -108,3 +108,109 @@ h2 {
 .neon-glow {
   @apply neon-text text-[#d984ec];
 }
+
+
+.title {
+  -webkit-animation: glow 2s ease-in-out both infinite;
+  animation: glow 2s ease-in-out both infinite;
+}
+
+.title:nth-child(1) {
+  -webkit-animation-delay: -0.2857142857s;
+  animation-delay: -0.2857142857s;
+}
+
+.title:nth-child(2) {
+  -webkit-animation-delay: -0.5714285714s;
+  animation-delay: -0.5714285714s;
+}
+
+.title:nth-child(3) {
+  -webkit-animation-delay: -0.8571428571s;
+  animation-delay: -0.8571428571s;
+}
+
+.title:nth-child(4) {
+  -webkit-animation-delay: -1.1428571429s;
+  animation-delay: -1.1428571429s;
+}
+
+.title:nth-child(5) {
+  -webkit-animation-delay: -1.4285714286s;
+  animation-delay: -1.4285714286s;
+}
+
+.title:nth-child(6) {
+  -webkit-animation-delay: -1.7142857143s;
+  animation-delay: -1.7142857143s;
+}
+
+.title:nth-child(7) {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+@-webkit-keyframes glow {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 4px snow,
+      0 -10px 20px #800080,
+      /* classic purple */
+      -10px 10px 20px #9932CC,
+      /* dark orchid */
+      10px 10px 20px #BA55D3;
+    /* medium orchid */
+  }
+
+  33% {
+    text-shadow:
+      0 0 4px snow,
+      0 -10px 20px #9370DB,
+      /* medium purple */
+      -10px 10px 20px #8A2BE2,
+      /* blue violet */
+      10px 10px 20px #DA70D6;
+    /* orchid */
+  }
+
+  66% {
+    text-shadow:
+      0 0 4px snow,
+      0 -10px 20px #D8BFD8,
+      /* thistle */
+      -10px 10px 20px #9400D3,
+      /* dark violet */
+      10px 10px 20px #EE82EE;
+    /* violet */
+  }
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 4px snow,
+      0 -10px 20px #800080,
+      -10px 10px 20px #9932CC,
+      10px 10px 20px #BA55D3;
+  }
+
+  33% {
+    text-shadow:
+      0 0 4px snow,
+      0 -10px 20px #9370DB,
+      -10px 10px 20px #8A2BE2,
+      10px 10px 20px #DA70D6;
+  }
+
+  66% {
+    text-shadow:
+      0 0 4px snow,
+      0 -10px 20px #D8BFD8,
+      -10px 10px 20px #9400D3,
+      10px 10px 20px #EE82EE;
+  }
+}
