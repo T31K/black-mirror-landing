@@ -15,14 +15,6 @@ export default function page() {
         <div className="relative min-h-[70dvh] md:min-h-screen flex flex-col justify-start pt-24 items-center">
           <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
             <div className="max-w-xl mx-auto text-center">
-              {/* <Image
-              src="/images/title.png"
-              alt="Black Mirror"
-              className="w-[400px] mx-auto"
-              loading="lazy"
-              width={1500}
-              height={1500}
-            /> */}
               <h1 className=" title tracking-tighter text-white font-canterbury text-9xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[120px] 2xl:text-[180px] leading-[7rem] sm:leading-tight md:leading-tight lg:leading-tightest xl:leading-[130px] 2xl:leading-[200px]">
                 Black <br />
                 <span className="nickel">Mirror</span>
