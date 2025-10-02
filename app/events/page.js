@@ -16,7 +16,7 @@ export default function EventsPage() {
               </h1>
               <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
                 Full list of events happening at <br />{" "}
-                <span className="text-white text-2xl font-canterbury">
+                <span className="text-white text-4xl font-canterbury">
                   Black Mirror
                 </span>
               </p>
