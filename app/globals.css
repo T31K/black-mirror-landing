@@ -18,7 +18,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-bodoni-moda), serif;
 }
 
 @layer utilities {
@@ -60,9 +60,11 @@ body {
   font-family: var(--font-leckerli-one) !important;
 }
 
-body {
-  font-family: var(--font-bodoni-moda);
+.font-bodoni-moda {
+  font-family: var(--font-bodoni-moda) !important;
 }
+
+/* Bodoni Moda is now applied to body above with proper fallbacks */
 
 div#main {
   background-image: url('/images/velvet.webp');

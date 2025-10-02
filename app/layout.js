@@ -16,16 +16,23 @@ const geistMono = localFont({
 const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 const bodoniModa = Bodoni_Moda({
   subsets: ["latin"],
   variable: "--font-bodoni-moda",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  fallback: ["serif"],
+  adjustFontFallback: false,
 });
 
 const tangerine = MonteCarlo({
   subsets: ["latin"],
   variable: "--font-leckerli-one",
   weight: ["400"],
+  display: "swap",
 });
 
 export const metadata = {

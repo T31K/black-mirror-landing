@@ -12,9 +12,13 @@ module.exports = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        fontRaleway: ["var(--font-raleway)"],
-        fontBodoniModa: ["var(--font-bodoni-moda)"],
-        fontLeckerliOne: ["var(--font-leckerli-one)"],
+        raleway: ["var(--font-raleway)", "sans-serif"],
+        "bodoni-moda": ["var(--font-bodoni-moda)", "serif"],
+        "leckerli-one": ["var(--font-leckerli-one)", "cursive"],
+        // Legacy camelCase versions for backward compatibility
+        fontRaleway: ["var(--font-raleway)", "sans-serif"],
+        fontBodoniModa: ["var(--font-bodoni-moda)", "serif"],
+        fontLeckerliOne: ["var(--font-leckerli-one)", "cursive"],
       },
       perspective: {
         1000: "1000px",
